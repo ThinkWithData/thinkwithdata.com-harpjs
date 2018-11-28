@@ -1,0 +1,11 @@
+doctype html
+html(lang='en')
+  head
+    != partial("_shared/head")
+  body
+    != partial("_shared/nav-bar")
+    // Page Content
+    .container.mt-5
+        != yield
+    // Footer
+    != partial("_shared/footer")
